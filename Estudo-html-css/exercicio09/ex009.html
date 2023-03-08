@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Imagens dinamicas</h1>
+    <p>Tentar abrir de formas diferente no seu navegados</p>
+
+    <picture> <!--A ordem importa sim, nunca esquecer de colocar do maior para o menor -->
+        <source media="(max-width: 750px )" srcset="fotoP.png" type="image/png"><!--imagen pequena-->
+        <source media="(max-width: 1050px )" srcset="fotoM.png" type="image/png"><!--imagen media-->
+        <img src="fotoG.png" alt="imagen flexivel"> <!--Imagen grande -->
+    </picture>
+    <h1>Aprendendo a reproduzir audio</h1>
+    <p>Vamos testa alguns sons</p>
+    <h1>Primeira maneira</h1>
+    <audio src="audio.mp3" controls></audio><!--controls aparece o incone de som / autoplay toca a música automatico-->
+    <h1>Segunda maneira</h1>
+    <audio preload="metadata" controls><!--loop, caso o audio seja curto-->
+        <source src="audio.mp3" type="audio/mpeg"><!--caso o navegador não suporta o audio mp3 ele segue tentando nos outros-->
+        <source src="audio.mp3" type="audio/ogg"><!--os 3 mais usados -->
+        <source src="audio.mp3" type="audio/wav">
+        <!-- caso o navegador não suporta o audio, um modo da pessoa baixar ele-->
+        <p>Infelismente o tipo de navegador que vocé esta usando não e compativel com esse audio. <a href="Fotos e icones/Fun Kid - Quincas Moreira.mp3">Clique aqui para baixar</a></p>
+    </audio>
+</body>
+</html>

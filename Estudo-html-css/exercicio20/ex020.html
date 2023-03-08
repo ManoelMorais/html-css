@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+          # = id
+          . = class
+          : = paseudo-class
+          :: = paseudo-elment
+          > = clilcren
+        */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: rgb(129, 202, 129);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: rgb(109, 72, 143);
+        }
+
+        a:hover {
+            color: blue;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: rgb(131, 206, 33);
+        }
+
+        .importante::before {
+            content: ' ↱ ';
+        }
+        .importante::after {
+            content: ' ↰ ';
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://www.instagram.com/" class="importante" target="_blank"> instagram </a></li>
+        <li><a href="https://twitter.com/i/flow/login"> twitter</a></li>
+        <li><a href="https://www.linkedin.com/feed/?trk=homepage-basic_google-one-tap-submit%3Elinkedin"> linkedin</a></li>
+    </ul>
+</body>
+</html>
