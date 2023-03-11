@@ -17,8 +17,8 @@
     font-weight: normal;
 }
 :root {
-    --cor0:#85d5f5;
-    --cor1:#60ccc7;
+    --cor0:#e4ebeb;
+    --cor1:#ffffff;
     --cor2:#3dbcdc;
     --cor3:#3874c4;
     --cor4:#3e5ab6;
@@ -47,7 +47,6 @@ main p {
 
 header {
     background: linear-gradient(0deg, rgb(186, 186, 189) 26%, rgb(45, 46, 45) 92%);
-    background-color: var(--cor4);
     min-height: 150px;
     text-align: center;
     padding-top: 30px;
