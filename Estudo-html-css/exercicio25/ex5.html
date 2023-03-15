@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport">
+    <title>Documento</title>
+    <style>
+        body {
+            background-color: rgb(187, 187, 187);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <a href="#" onclick="clicou()">Clique em mim</a>
+    <div id="saida"></div>
+
+    <script>
+        function clicou() {
+           s = window.document.getElementById("saida")
+           s.innerHTML += '<p>Vocé clicou</p>'
+        }
+    </script>
+</body>
+</html>
