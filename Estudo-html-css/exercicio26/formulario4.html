@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get">
+        <p>
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" autocomplete="email" required >
+        </p>
+        <p>
+            <label for="tel">Telefone</label>
+            <input type="tel" name="tel" id="tel" autocomplete="tel" pattern="^\(\d{2}){4,5}-[0-9]{4}$" placeholder="(00) 00000-0000" required>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
+
+<!-- 
+     pattern="^\(\d{2}){4,5}-[0-9]{4}$" tipo de celular com dd primeiro numero com 5 e depois com 4 
+     estudar mais sobre regex
+    -->
