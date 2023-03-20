@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on"></form> <!--post = sem limites para enviar algo/ get = tem limite de 30 de envio-->
+
+    <p>
+        <label for="est">Estado:</label>
+        <select name="esttado" id="estado">
+            <option value="estado"></option>
+        
+            <option value="" selected> ---Escolha---</option>
+            <optgroup label="Região Sudeste">
+                <option value="MG">Minas Gerais</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="SP">São Paulo</option>
+            </optgroup>
+
+            <optgroup label="Região Nordeste">
+                <option value="SE">Sergipe</option>
+                <option value="AL">Alagoas</option>
+                <option value="PE">Pernambuco</option>
+            </optgroup>
+        </select>
+    </p>
+
+    <p>
+        <label for="msg">Mensagem:</label> <br>
+        <textarea name="msg" id="msg" cols="30" rows="20"></textarea>
+    </p>
+
+    <P>
+        <label for="prof">Profissão</label>
+        <input type="text" name="prof" id="prof" list="isprof">
+        <datalist id="isprof">
+            <option value="DEV">Desenvolvedor</option> <!--caso queira tirar o value funciona normal também-->
+            <option value="PROF">Professor</option>
+            <option value="ADM">Administrador</option>
+            <option value="CONT">Contador</option>
+        </datalist>
+    </P>
+
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </p>
+</body>
+</html>
