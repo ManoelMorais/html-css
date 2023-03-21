@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+/*Estilo para impressoras*/
+
+* {
+    margin: 10px;
+    padding: 10px;
+}
+
+html {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    line-height: normal;
+}
+
+menu {
+    display: none;
+}
+
+article::after {
+    content: 'Esse arquivo foi feito pelo site do curso em video';
+}
+
+article {
+    width: 100%;
+}

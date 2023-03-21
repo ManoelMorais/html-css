@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+/* Tamanho de pixel em diversos dispositivos 
+
+Pequenas telas até 600px
+phones = 576px até 767px
+tablets = 768px até 991px
+desktops = 992px até 1199px
+*/
+
+@media print /*Impressora*/{
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) /*Tablet*/{
+    body {
+        background-image:url(../imagens/back-tablet.jpg) ;
+    }
+    img#celular {display: none;}
+    img#tablet {display: block;}
+    img#tv {display: none;}
+    img#empressora {display: none;}
+    img#pc {display: none;}
+}
+
+@media screen and (min-width: 991px) and (max-width: 1199px) /*Desktops*/ {
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    img#celular {display: none;}
+    img#tablet {display: none;}
+    img#tv {display: none;}
+    img#empressora {display: none;}
+    img#pc {display: block;}
+}
+
+@media screen and (min-width: 1199px) /*Telas grandes*/ {
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    img#celular {display: none;}
+    img#tablet {display: none;}
+    img#tv {display: block;}
+    img#empressora {display: none;}
+    img#pc {display: none;}
+}
